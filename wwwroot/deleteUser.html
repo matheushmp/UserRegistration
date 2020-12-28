@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Deletar Usuário</title>
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+    <h4>Deletar usuário por CPF</h4>
+    <form action="javascript:void(0);" onsubmit="deleteUserByCPF()">
+        <input type="text" id="delete-by-cpf" placeholder="CPF"><br>
+    </form>
+    <h4>Deletar usuário por RG</h4>
+    <form action="javascript:void(0);" onsubmit="deleteUserByRG()">
+        <input type="text" id="delete-by-rg" placeholder="RG"><br>
+    </form>
+
+    <script src="js/deleteUser.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        getUsers();
+    </script>
+</body>
+</html>

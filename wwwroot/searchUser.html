@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Procurar usuário</title>
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<h4>Procurar por CPF</h4>
+<form action="javascript:void(0);" onsubmit="searchByCPF()">
+    <input type="text" id="search-by-cpf" placeholder="CPF"><br>
+</form>
+<h4>Procurar por RG</h4>
+<form action="javascript:void(0);" onsubmit="searchByRG()">
+    <input type="text" id="search-by-rg" placeholder="RG"><br>
+</form>
+<h4>Procurar por nome</h4>
+<form action="javascript:void(0);" onsubmit="searchByName()">
+    <input type="text" id="search-by-name" placeholder="nome"><br>
+</form>
+<br>
+<table id="table-user">
+    <tr>
+        <th>Nome</th>
+        <th>CPF</th>
+        <th>RG</th>
+        <th>Data de nascimento</th>
+        <th>Nome do pai</th>
+        <th>Nome da mãe</th>
+        <th>Data de registro</th>
+    </tr>
+    <tbody id="user">
+    </tbody>
+</table>
+<b id="error"></b>
+<script src="js/searchUser.js" asp-append-version="true"></script>
+<script type="text/javascript">
+    getUsers();
+    hideTable();
+</script>
+</body>
+
+</html>

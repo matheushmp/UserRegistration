@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro usuário</title>
+    <link rel="stylesheet" href="css/registeruser.css" />
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+    <h3>Preencher os campos abaixo</h3>
+    <form action="javascript:void(0);" method="POST" onsubmit="addUser()">
+        <input type="text" id="add-name" placeholder="Nome"><br>
+        <input type="text" id="add-cpf" placeholder="CPF"><br>
+        <input type="text" id="add-rg" placeholder="RG"><br>
+        <input type="date" id="add-birthdate" placeholder="Data de nascimento"><br>
+        <input type="text" id="add-mothername" placeholder="Nome da mãe"><br>
+        <input type="text" id="add-fathername" placeholder="Nome do pai"><br>
+        <input type="submit" value="Adicionar">
+        <b id="Error" ></b>
+    </form>
+    <script src="js/registeruser.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        getUsers();
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de usuários</title>
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+    <form action="registerUser.html">
+        <input type="submit" value="Cadastrar Usuário" />
+    </form>
+    <br>
+    <form action="deleteUser.html">
+        <input type="submit" value="Deletar Usuário" />
+    </form>
+    <br>
+    <form action="searchUser.html">
+        <input type="submit" value="Procurar Usuário" />
+    </form>
+    <br>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th></th>
+        </tr>
+        <tbody id="users"></tbody>
+    </table>
+    
+
+    <script src="js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        getUsers();
+    </script>
+</body>
+</html>

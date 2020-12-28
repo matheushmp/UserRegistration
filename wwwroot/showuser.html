@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Usuário</title>
+    <link rel="stylesheet" href="css/showuser.css" />
+</head>
+<body>
+    <table>
+        <tbody id="user">
+        </tbody>
+    </table>
+    <script src="js/showuser.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        getUser();
+    </script>
+    <div id="editForm">
+        <h3>Editar usuário</h3>
+        <form action="javascript:void(0);" onsubmit="updateUser()">
+            <input type="hidden" id="edit-id">
+            <input type="text" id="edit-name"><br>
+            <input type="text" id="edit-cpf"><br>
+            <input type="text" id="edit-rg"><br>
+            <input type="date" id="edit-birthdate"><br>
+            <input type="text" id="edit-mothername"><br>
+            <input type="text" id="edit-fathername"><br>
+            <input type="submit" value="Save">
+            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div>
+    <script src="js/showuser.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        closeInput();
+    </script>
+
+</body>
+</html>
